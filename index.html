@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="UTF-8" />
+        <title>Formulario</title>
+        <link rel="stylesheet" href="../css/styles.css">
+        <!-- Secure fields form / PaymantsOS-->
+        <script language="JavaScript" type="text/javascript" src="https://js.paymentsos.com/v2/latest/secure-fields.min.js">
+        </script>
+        <script>
+            POS.setPublicKey("470f7914-72cf-459f-9fdc-458e89066212");
+        </script>
+    </head>
+    <body>
+        <form id="payment-form">
+            <h2>Payment form</h2>
+            <div class="field">
+                <input id="cardholder-name" class="form" type="text" placeholder="Name" />
+            </div>
+            <div class="field">
+                <input id="email" class="form" type="email" placeholder="Email" maxlength="50" required>
+            </div>
+            <div class="field">
+                <input id="phone" class="form" type="tel" placeholder="Phone Number" max="50" required>
+            </div>
+            <div class="field">
+                <input id="country" class="form" type="text" placeholder="Country" maxlength="50" required>
+            </div>
+            <div class="field">
+                <input id="city" class="form" type="text" placeholder="City" maxlength="50" required>
+            </div>
+            <div class="field">
+                <input id="address" class="form" type="text" placeholder="Addres" maxlength="50" required>
+            </div>
+            <div id="card-secure-fields">
+                <!-- The payment form will be displayed here -->
+            </div>
+            <button type="submit" id="pay_button">Pay</button>
+         </form>
+         <script src="../js/index.js"></script>     
+    </body>
