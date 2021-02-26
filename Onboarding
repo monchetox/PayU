@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Onboarding</title>
+        <style>
+        body 
+        {
+            background-color: white;
+            font-family: "proxima-soft", "Proxima Soft", "Proxima Nova Soft", Helvetica, Arial, sans-serif;
+            text-align: justify;
+            
+        }
+        h1
+        {
+            text-align: center;
+            color: #3284C8;
+        }
+        h3
+        {
+            color: #3284C8;
+        }
+        div
+        {
+            margin: 0em 5em 0em 5em;
+            color: #7E8186;
+        }
+        img
+        {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <img id="logo" src="">
+    <h1>PaymentOS Onboarding</h1>
+    <div>
+    <p style="font-weight: lighter; font-size: 12px;  text-align: right;">Writed by Cristian A. Monroy</p>
+    <p>PaymentOS is a service that let you center the payment services for your business, you can set it up with a just a few esay steps and test your services before go life to check the integration with your platform.</p>
+    <h3>1. Set up your PaymentOS account</h3>
+    <p>Go to the Sign Up page, you can access from <a href="https://control.paymentsos.com/login">here</a>, by default your account will be in a Test state, to go live you must activate your account.</p>
+    <h3>2. Set up your Providers</h3>
+    <p>On your left panel you will find the Account option, there you must select Service option, here you can see an example</p>
+    <img src="../img/providers.PNG" alt="Providers">
+    <p>You will need the credentials for the provider selected and define a Configuration Name</p>
+    <h3>3. Set up your Business Unit</h3>
+    <p>Define your Business Unit Name and select the provider that you configure in the previous step.</p>
+    <p>It will give you and App ID, your public API key and your Pivate API key, here an example</p>
+    <center><img style="width: 50%;" src="../img/business_unit.PNG" alt="Business unit"></center>
+    <h3>4. Set up your Payment Flow</h3>
+    <p>Now you have all items to start testing, you can develop your payment form using as resource the developer page <a href="https://developers.paymentsos.com/docs/quick-start.html">https://developers.paymentsos.com/docs/quick-start.html</a>, you can configure a two steps flow also known as Authorize-Capture flow or a one step flow also known as Charge, here you must test your API you can use Postman Collection, if everything is ok you must develop the code to connect your API's with you site.</p>
+    <p>The documentation page allow you to check how to develop your code according the flow you selected and how the API's capture the information.</p>
+    </div>
 
+</body>
+</html>
